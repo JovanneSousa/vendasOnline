@@ -13,7 +13,9 @@ import java.util.Set;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.primefaces.event.RowEditEvent;
 
@@ -25,6 +27,8 @@ import br.com.jsousa.service.IClienteService;
 import br.com.jsousa.service.IProdutoService;
 import br.com.jsousa.service.IVendaService;
 
+@Named
+@ViewScoped
 public class VendaController implements Serializable {
 
 	/**

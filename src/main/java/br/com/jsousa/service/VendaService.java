@@ -1,5 +1,6 @@
 package br.com.jsousa.service;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 import br.com.jsousa.dao.IVendaDAO;
@@ -9,6 +10,7 @@ import br.com.jsousa.exceptions.DAOException;
 import br.com.jsousa.exceptions.TipoChaveNaoEncontradaException;
 import br.com.jsousa.services.generic.GenericService;
 
+@Stateless
 public class VendaService extends GenericService<Venda, Long> implements IVendaService{
 
 	IVendaDAO dao;

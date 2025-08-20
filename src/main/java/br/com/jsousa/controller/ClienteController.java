@@ -5,13 +5,17 @@ import java.util.Collection;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
+import javax.faces.view.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import br.com.jsousa.domain.Cliente;
 import br.com.jsousa.service.IClienteService;
 import br.com.jsousa.utils.ReplaceUtils;
 
+@Named
+@ViewScoped
 public class ClienteController implements Serializable {
 	
 	/**

@@ -16,7 +16,7 @@ import br.com.jsousa.domain.Cliente;
 @FacesConverter(value = "clienteConverter", forClass = Cliente.class)
 public class ClienteConverter implements Converter {
 	
-	private static final String key = "br.com.rpires.converter.ClienteConverter";
+	private static final String key = "br.com.jsousa.converter.ClienteConverter";
 	
 	@Override
 	public Object getAsObject(FacesContext context, UIComponent component, String value) {
